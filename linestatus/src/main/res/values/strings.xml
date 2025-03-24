@@ -1,0 +1,6 @@
+<resources>
+    <string name="activity_name">Line Status</string>
+    <string name="unable_to_load_reason">Unable to load line status, reason: %1$s</string>
+    <string name="tfl_line_status">TFL Line Status</string>
+    <string name="see_more_details_about">see more details about %1$s</string>
+</resources>
