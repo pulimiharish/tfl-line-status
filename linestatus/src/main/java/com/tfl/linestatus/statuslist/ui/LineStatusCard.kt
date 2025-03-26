@@ -38,7 +38,7 @@ fun LineStatusCard(
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 12.dp, vertical = 4.dp)
+            .padding(horizontal = 6.dp, vertical = 6.dp)
             .clickable {
                 selectedItem(
                     tubeLineStatus.name,
@@ -53,8 +53,8 @@ fun LineStatusCard(
                 )
             },
         colors = CardDefaults.cardColors(containerColor = Color.White),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-        shape = RoundedCornerShape(10.dp)
+        elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
+        shape = RoundedCornerShape(6.dp)
     ) {
         Row(
             modifier = Modifier

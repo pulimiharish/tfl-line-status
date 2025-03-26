@@ -1,33 +1,47 @@
 package com.tfl.linestatus.utils
 
 import androidx.compose.ui.graphics.Color
+import com.tfl.linestatus.theme.BakerlooColor
+import com.tfl.linestatus.theme.CentralColor
+import com.tfl.linestatus.theme.CircleColor
+import com.tfl.linestatus.theme.DistrictColor
+import com.tfl.linestatus.theme.GoodServiceColor
+import com.tfl.linestatus.theme.HammersmithAndCityColor
+import com.tfl.linestatus.theme.JubileeColor
+import com.tfl.linestatus.theme.MetropolitanColor
+import com.tfl.linestatus.theme.MinorDelaysColor
+import com.tfl.linestatus.theme.NorthernColor
+import com.tfl.linestatus.theme.PartClosureColor
+import com.tfl.linestatus.theme.PiccadillyColor
+import com.tfl.linestatus.theme.PlannedClosureColor
+import com.tfl.linestatus.theme.SevereDelaysColor
+import com.tfl.linestatus.theme.VictoriaColor
+import com.tfl.linestatus.theme.WaterlooAndCityColor
 
-// Function to return line colors
 fun getColorForLine(lineName: String?): Color {
     return when (lineName) {
-        "Bakerloo" -> Color(0xFFB36305)
-        "Central" -> Color(0xFFE32017)
-        "Circle" -> Color(0xFFFFD300)
-        "District" -> Color(0xFF007229)
-        "Hammersmith & City" -> Color(0xFFF86C67)
-        "Jubilee" -> Color(0xFFA0A5A9)
-        "Metropolitan" -> Color(0xFF8A004F)
-        "Northern" -> Color(0xFF000000)
-        "Piccadilly" -> Color(0xFF0019A8)
-        "Victoria" -> Color(0xFF00A0E2)
-        "Waterloo & City" -> Color(0xFF00A99D)
+        "Bakerloo" -> BakerlooColor
+        "Central" -> CentralColor
+        "Circle" -> CircleColor
+        "District" -> DistrictColor
+        "Hammersmith & City" -> HammersmithAndCityColor
+        "Jubilee" -> JubileeColor
+        "Metropolitan" -> MetropolitanColor
+        "Northern" -> NorthernColor
+        "Piccadilly" -> PiccadillyColor
+        "Victoria" -> VictoriaColor
+        "Waterloo & City" -> WaterlooAndCityColor
         else -> Color.Gray
     }
 }
 
-// Function to return status colors dynamically
 fun getStatusColor(status: String?): Color {
     return when (status) {
-        "Good Service" -> Color(0xFF4CAF50) // Green
-        "Minor Delays" -> Color(0xFFFFA000) // Orange
-        "Severe Delays" -> Color(0xFFD32F2F) // Red
-        "Part Closure" -> Color(0xFF757575) // Grey
-        "Planned Closure" -> Color(0xFF303F9F) // Blue
+        "Good Service" -> GoodServiceColor
+        "Minor Delays" -> MinorDelaysColor
+        "Severe Delays" -> SevereDelaysColor
+        "Part Closure" -> PartClosureColor
+        "Planned Closure" -> PlannedClosureColor
         else -> Color.Gray
     }
 }
