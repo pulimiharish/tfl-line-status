@@ -5,9 +5,19 @@
 ## Preview
 
 Here's a quick preview of the app in action, showing a list of Tube lines and their current status:
+
 <img src="/art/preview.png" width="300"/>
 
+Here's another preview of the app when the display size is large which adjusts the views accordingly:
+
+<img src="/art/large_preview.png" width="300"/>
+
 ## Getting Started
+
+### Setup
+
+* Android Studio Ladybug
+* gradle 8.9
 
 ### Building the App
 
@@ -27,7 +37,7 @@ Here's a quick preview of the app in action, showing a list of Tube lines and th
 
 ### Running the App
 
-Once installed, open the **TFL Line Status** app on your device. You should see a list of all London Tube lines, each with its current status (e.g., "Good Service", "Minor Delays", etc.). Tapping on a line will show more details about the status or any disruptions. The data is fetched live from the TfL API, so you'll need an internet connection for the latest information.
+Once installed, open the **Line Status** app on your device. You should see a list of all London Tube lines, each with its current status (e.g., "Good Service", "Minor Delays", etc.). Tapping on a line will show more details about the status or any disruptions. The data is fetched live from the TfL API, so you'll need an internet connection for the latest information.
 
 ## Testing
 
